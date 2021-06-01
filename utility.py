@@ -18,11 +18,23 @@ def createFibSequenceWithMax(max):
     return fibSequence
 
 def isPrime(num):
+
+    if num == 2:
+        return True
+
     if isEven(num):
         return False
+
     if num <= 1:
         return False
-    for i in range(2, int(math.sqrt(num))):
+    sumOfDigits = 0
+
+    for each in str(num):
+        sumOfDigits += int(each)
+    if sumOfDigits % 9 == 0:
+        return False
+
+    for i in range(2, int(math.sqrt(num) + 1)):
         if num % i == 0:
             return False
     return True
@@ -30,5 +42,5 @@ def isPrime(num):
 if __name__ == '__main__':
     # print(isEven(0))
     # print(createFibSequenceWithMax(10))
-    print(isPrime(600851475143))
+    print(isPrime(4239963954))
 
