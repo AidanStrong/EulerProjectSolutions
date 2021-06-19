@@ -39,8 +39,13 @@ def isPrime(num):
             return False
     return True
 
+def addZeroes(num):
+    num *= 10;
+    return num
+
 if __name__ == '__main__':
     # print(isEven(0))
     # print(createFibSequenceWithMax(10))
-    print(isPrime(4239963954))
+    # print(isPrime(4239963954))
+    print(addZeroes(3))
 

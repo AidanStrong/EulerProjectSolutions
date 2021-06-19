@@ -16,7 +16,6 @@
 
 from utility import *
 
-#brute force algorithm, refined below
 def task_12():
     divisorThreshold = 500
     n = 2
