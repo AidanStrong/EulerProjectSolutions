@@ -43,6 +43,15 @@ def addZeroes(num):
     num *= 10;
     return num
 
+def isLeap(year):
+    if year % 400 == 0:
+        return True
+    if year % 100 == 0:
+        return False
+    if year % 4 == 0:
+        return True
+    return False
+
 if __name__ == '__main__':
     # print(isEven(0))
     # print(createFibSequenceWithMax(10))
